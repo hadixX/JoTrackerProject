@@ -1,0 +1,23 @@
+﻿{
+  "applications": {
+    "AbpSolution1.Angular": {
+      "type": "cli",
+      "workingDirectory": "../../angular",
+      "startCommand": "./start.ps1",
+      "launchUrl": "http://localhost:4200",
+      "execution": {
+        "order": 0
+      }
+    },
+    "AbpSolution1": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44366",
+      "healthCheckEndpoint": "/health-status",
+      "healthUiEndpoint": "/health-ui",
+      "path": "../../AbpSolution1/AbpSolution1.csproj",
+      "execution": {
+        "order": 1
+      }
+    }
+  }
+}
